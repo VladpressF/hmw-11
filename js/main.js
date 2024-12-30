@@ -61,8 +61,8 @@ let user = {
   login: function (email, password) {
   
         if (
-          email === document.getElementById("loginInput").value &&
-          password === document.getElementById("passwordInput").value
+          this.email === document.getElementById("loginInput").value &&
+          this.password === document.getElementById("passwordInput").value
         ) {
           document.getElementById("loginOutput").textContent =
             "Ви успішно увійшли";
